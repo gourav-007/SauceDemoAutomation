@@ -2,9 +2,9 @@
 
 ## Quick Links
 
-- **GitHub Repository**: https://github.com/YOUR_USERNAME/SauceDemoAutomation
-- **CI/CD Pipeline**: https://github.com/YOUR_USERNAME/SauceDemoAutomation/actions
-- **Documentation**: [README.md](README.md)
+- **GitHub Repository**: https://github.com/gourav-007/SauceDemoAutomation
+- **CI/CD Pipeline**: https://github.com/gourav-007/SauceDemoAutomation/actions
+- **Test Reports**: Download from Actions tab after test run
 
 ---
 
@@ -20,26 +20,26 @@ This is a comprehensive automated testing framework for the [SauceDemo](https://
 | Logout | 3 | Logout workflow, session management |
 | Cart | 6 | Add/remove items, cart badge updates |
 | Checkout | 8 | E2E flow, form validation, price calculation |
-
-**Total: 23 automated test cases** - all passing
+| **Total** | **23** | All workflows covered |
 
 ## Architecture
 
 - **Page Object Model (POM)** - Clean separation of concerns
 - **Explicit Waits** - No hardcoded sleeps, reliable execution
-- **Allure Reporting** - Detailed HTML reports with screenshots
+- **TestNG HTML Reports** - Human-readable test reports
 - **GitHub Actions** - Automated CI/CD pipeline
 
 ## Run Tests
 
 **Option 1: GitHub Actions (No Setup Required)**
-1. Visit: https://github.com/YOUR_USERNAME/SauceDemoAutomation/actions
+1. Visit: https://github.com/gourav-007/SauceDemoAutomation/actions
 2. Click on a workflow run to see test execution results
+3. Download HTML report from Artifacts
 
 **Option 2: Local Execution**
 ```bash
-mvn clean test              # Run all tests
-mvn allure:serve            # View HTML report
+mvn clean test
+# Open target/surefire-reports/index.html for HTML report
 ```
 
 ## Technology Stack
@@ -50,7 +50,7 @@ mvn allure:serve            # View HTML report
 | Test Framework | TestNG 7.11 |
 | Browser Automation | Selenium WebDriver 4.27 |
 | Build Tool | Maven 3.x |
-| Reporting | Allure 2.30 |
+| Reporting | TestNG HTML Reports |
 
 ---
 
@@ -59,7 +59,7 @@ mvn allure:serve            # View HTML report
 ✅ **23 comprehensive tests** covering all required workflows  
 ✅ **Industry-standard POM architecture**  
 ✅ **Automated CI/CD via GitHub Actions**  
-✅ **Detailed Allure reports** with screenshots  
+✅ **Human-readable HTML test reports**  
 ✅ **Cross-browser support** (Chrome, Firefox, Edge)
 
 All tests pass reliably. The framework is production-ready and easy to extend.

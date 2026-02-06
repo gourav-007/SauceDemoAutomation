@@ -30,3 +30,18 @@ jobs:
         with:
           name: test-reports
           path: target/surefire-reports/
+          
+      - name: Show test results
+        if: always()
+        run: |
+          echo "## Test Execution Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f target/surefire-reports/testng-results.xml ]; then
+            echo "✅ Tests completed. View detailed reports in the 'test-reports' artifact." >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "**To view HTML reports:**" >> $GITHUB_STEP_SUMMARY
+            echo "1. Download the 'test-reports' artifact" >> $GITHUB_STEP_SUMMARY
+            echo "2. Extract and open `target/surefire-reports/index.html`" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⚠️ Test results not found" >> $GITHUB_STEP_SUMMARY
+          fi
