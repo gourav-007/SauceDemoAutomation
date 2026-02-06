@@ -1,6 +1,6 @@
 # SauceDemo Automated Testing Project
 
-![Tests](https://github.com/YOUR_USERNAME/SauceDemoAutomation/workflows/Tests/badge.svg)
+![Tests](https://github.com/gourav-007/SauceDemoAutomation/workflows/Tests/badge.svg)
 
 ## Quick Start for Reviewers
 
