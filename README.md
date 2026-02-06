@@ -6,7 +6,7 @@
 
 **Want to see the tests run without installing anything?**
 
-1. Visit: https://github.com/YOUR_USERNAME/SauceDemoAutomation
+1. Visit: https://github.com/gourav-007/SauceDemoAutomation
 2. Click the **Actions** tab to see automated test runs
 3. Each push automatically triggers the test suite
 
@@ -115,7 +115,7 @@ mvn allure:serve   # Generate and open Allure report
 
 Tests automatically run on every push via **GitHub Actions**:
 
-1. **Visit**: https://github.com/YOUR_USERNAME/SauceDemoAutomation/actions
+1. **Visit**: https://github.com/gourav-007/SauceDemoAutomation/actions
 2. **Click** on a workflow run to see:
    - Test execution progress
    - Pass/fail status
