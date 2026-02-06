@@ -42,3 +42,9 @@ allure-report/
 # OS
 Thumbs.db
 .DS_Store
+
+# Local scripts (not for repository)
+run-tests.bat
+terminal_logs.txt
+terminal/
+plans/
