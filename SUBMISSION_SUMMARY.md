@@ -27,7 +27,7 @@ This is a comprehensive automated testing framework for the [SauceDemo](https://
 - **Page Object Model (POM)** - Clean separation of concerns
 - **Explicit Waits** - No hardcoded sleeps, reliable execution
 - **TestNG HTML Reports** - Human-readable test reports
-- **GitHub Actions** - Automated CI/CD pipeline
+- **GitHub Actions** - Automated CI/CD pipeline with manual trigger
 
 ## Run Tests
 
@@ -35,6 +35,7 @@ This is a comprehensive automated testing framework for the [SauceDemo](https://
 1. Visit: https://github.com/gourav-007/SauceDemoAutomation/actions
 2. Click on a workflow run to see test execution results
 3. Download HTML report from Artifacts
+4. **Manual Trigger**: Go to Actions → "Tests" workflow → Click "Run workflow" to run tests on-demand
 
 **Option 2: Local Execution**
 ```bash
@@ -56,10 +57,10 @@ mvn clean test
 
 ## Summary
 
-✅ **23 comprehensive tests** covering all required workflows  
-✅ **Industry-standard POM architecture**  
-✅ **Automated CI/CD via GitHub Actions**  
-✅ **Human-readable HTML test reports**  
+✅ **23 comprehensive tests** covering all required workflows
+✅ **Industry-standard POM architecture**
+✅ **Automated CI/CD via GitHub Actions** with manual trigger
+✅ **Human-readable HTML test reports**
 ✅ **Cross-browser support** (Chrome, Firefox, Edge)
 
 All tests pass reliably. The framework is production-ready and easy to extend.

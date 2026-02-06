@@ -9,6 +9,7 @@
 1. Visit: https://github.com/gourav-007/SauceDemoAutomation
 2. Click the **Actions** tab to see automated test runs
 3. Each push automatically triggers the test suite
+4. You can also trigger tests manually: Go to Actions → "Tests" → Run workflow
 
 **Want to run tests locally?**
 
@@ -113,6 +114,16 @@ Tests automatically run on every push via **GitHub Actions**:
    - Pass/fail status
    - Test results
 
+### Manual Trigger
+
+You can also trigger tests manually without pushing code:
+
+1. Go to: https://github.com/gourav-007/SauceDemoAutomation/actions/workflows/test.yml
+2. Click **"Run workflow"** dropdown
+3. Select branch (main) and click **"Run workflow"**
+
+This is useful for reviewers who want to verify tests without requiring code changes.
+
 ## Configuration
 
 Edit `src/test/resources/config.properties`:
@@ -131,3 +142,4 @@ implicit.wait=10
 - **HTML Reports** - Human-readable test reports
 - **Cross-Browser Support** - Chrome, Firefox, Edge
 - **CI/CD Ready** - GitHub Actions integration
+- **Manual Trigger** - Run tests on-demand via Actions tab
